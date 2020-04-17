@@ -4,7 +4,7 @@
     height: 100%;
     box-shadow: 0 0 15px 0 rgba(31, 56, 88, 0.08);
     border-radius: 3px;
-    .more-positon{
+    .positon-header{
         height: 49px;
         border-bottom: 1px solid rgba(31,56,88,0.06);
         line-height: 49px;
@@ -18,7 +18,7 @@
             color: rgba(31,56,88,0.60);
         }
     }   
-    .ul-box{
+    .position-list-box{
        position: relative;
        flex: 1;
        overflow: hidden;
@@ -26,11 +26,12 @@
             position: absolute;
             width: 100%;
             top: 0;
-            .item{
+            .position-list-item{
                 list-style: none;
                 display: flex;
                 justify-content: space-between;
-                padding:5px 10px;
+                padding:5px 14px;
+                line-height: 40px;
                 a{
                     font-size: 14px;
                     color: #3C99D8;

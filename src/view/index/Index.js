@@ -6,96 +6,96 @@ export default class Index extends Component {
     state = {
         positionList : [{   //假数据
             title : "银泰商业-高级测试专家",
-            time : "58分钟",
+            time : "58分钟前",
             city : "杭州",
             href : "https://job.alibaba.com/zhaopin/PositionDetail.htm?positionCode=GP631277"
         },{   //假数据
             title : "银泰商业-高级测试专家",
-            time : "58分钟",
+            time : "58分钟前",
             city : "杭州",
             href : "https://job.alibaba.com/zhaopin/PositionDetail.htm?positionCode=GP631277"
         }
         ,{   //假数据
             title : "银泰商业-高级测试专家",
-            time : "58分钟",
+            time : "58分钟前",
             city : "杭州",
             href : "https://job.alibaba.com/zhaopin/PositionDetail.htm?positionCode=GP631277"
         }
         ,{   //假数据
             title : "银泰商业-高级测试专家",
-            time : "58分钟",
+            time : "58分钟前",
             city : "杭州",
             href : "https://job.alibaba.com/zhaopin/PositionDetail.htm?positionCode=GP631277"
         }
         ,{   //假数据
             title : "银泰商业-高级测试专家",
-            time : "58分钟",
+            time : "58分钟前",
             city : "杭州",
             href : "https://job.alibaba.com/zhaopin/PositionDetail.htm?positionCode=GP631277"
         }
         ,{   //假数据
             title : "银泰商业-高级测试专家",
-            time : "58分钟",
+            time : "58分钟前",
             city : "杭州",
             href : "https://job.alibaba.com/zhaopin/PositionDetail.htm?positionCode=GP631277"
         }
         ,{   //假数据
             title : "银泰商业-高级测试专家",
-            time : "58分钟",
+            time : "58分钟前",
             city : "杭州",
             href : "https://job.alibaba.com/zhaopin/PositionDetail.htm?positionCode=GP631277"
         }
         ,{   //假数据
             title : "银泰商业-高级测试专家",
-            time : "58分钟",
+            time : "58分钟前",
             city : "杭州",
             href : "https://job.alibaba.com/zhaopin/PositionDetail.htm?positionCode=GP631277"
         }
         ,{   //假数据
             title : "银泰商业-高级测试专家",
-            time : "58分钟",
+            time : "58分钟前",
             city : "杭州",
             href : "https://job.alibaba.com/zhaopin/PositionDetail.htm?positionCode=GP631277"
         }
         ,{   //假数据
             title : "银泰商业-高级测试专家",
-            time : "58分钟",
+            time : "58分钟前",
             city : "杭州",
             href : "https://job.alibaba.com/zhaopin/PositionDetail.htm?positionCode=GP631277"
         }
         ,{   //假数据
             title : "银泰商业-高级测试专家",
-            time : "58分钟",
+            time : "58分钟前",
             city : "杭州",
             href : "https://job.alibaba.com/zhaopin/PositionDetail.htm?positionCode=GP631277"
         }
         ,{   //假数据
             title : "银泰商业-高级测试专家",
-            time : "58分钟",
+            time : "58分钟前",
             city : "杭州",
             href : "https://job.alibaba.com/zhaopin/PositionDetail.htm?positionCode=GP631277"
         }
         ,{   //假数据
             title : "银泰商业-高级测试专家",
-            time : "58分钟",
+            time : "58分钟前",
             city : "杭州",
             href : "https://job.alibaba.com/zhaopin/PositionDetail.htm?positionCode=GP631277"
         }
         ,{   //假数据
             title : "银泰商业-高级测试专家",
-            time : "58分钟",
+            time : "58分钟前",
             city : "杭州",
             href : "https://job.alibaba.com/zhaopin/PositionDetail.htm?positionCode=GP631277"
         }
         ,{   //假数据
             title : "银泰商业-高级测试专家",
-            time : "58分钟",
+            time : "58分钟前",
             city : "杭州",
             href : "https://job.alibaba.com/zhaopin/PositionDetail.htm?positionCode=GP631277"
         }
         ,{   //假数据
             title : "银泰商业-高级测试专家",
-            time : "58分钟",
+            time : "58分钟前",
             city : "杭州",
             href : "https://job.alibaba.com/zhaopin/PositionDetail.htm?positionCode=GP631277"
         }
@@ -105,9 +105,9 @@ export default class Index extends Component {
     }
     render() {
         return (
-            <div id="zhaopin-box">
+            <div >
                 <header className="index-header-wrap">
-                    <div className="index-header">
+                    <div className="index-header-content">
                         <div className="index-logo-box">
                             <a href="https://job.alibaba.com/zhaopin/index.htm">
                                 <img src="https://img.alicdn.com/tfs/TB1Zv8_lxSYBuNjSspjXXX73VXa-390-63.png" height="20" alt="logo" />
@@ -131,7 +131,7 @@ export default class Index extends Component {
                     </div>
 
                 </header>
-                <main className="index-main">
+                <main className="index-main-wrap">
                     <img className="index-banner" src="https://img.alicdn.com/tfs/TB14TEEm7CWBuNjy0FaXXXUlXXa-1440-478.png" alt=""></img>
                     <div className="index-filter"></div>
                     <div className="index-banner-text-box">
@@ -162,7 +162,7 @@ export default class Index extends Component {
                         </div>
                     </div>
                 </main>
-                <div className="newPosition">
+                <div className="index-newPosition-wrap">
                     <div className="newPosition-content">
                         <div className="newPosition-list">
                             {/* 该组件需要传递数据，datalist为轮播的数据内容，title为标题，morehref为更多链接的地址 */}
@@ -178,7 +178,7 @@ export default class Index extends Component {
                         </div>
                     </div>
                 </div>
-                <footer className="index-footer">
+                <footer className="index-footer-wrap">
                     <div className="index-footer-content">
 		                    阿里巴巴集团 Copyright ©1999-2020 版权所有
                     </div>

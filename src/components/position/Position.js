@@ -6,19 +6,18 @@ export default class Position extends Component {
         this.setState({
             datalist : this.props.datalist
         },()=>{
-            var dom = this.state.ulRef.current;
-            this.handlerEvent()
+            let dom = this.state.ulRef.current;
+            this.scrollHandlerEvent()
             dom.onmouseover = ()=>{
                 clearInterval(this.timer)
             }
             dom.onmouseout = ()=>{
-                this.handlerEvent()
+                this.scrollHandlerEvent()
             }
-        })
-        
+        }) 
     }
     componentWillUnmount(){
-        var dom = this.state.ulRef.current;
+        let dom = this.state.ulRef.current;
         dom.onmouseover = null;
         dom.onmouseout = null;
         clearInterval(this.timer)
@@ -31,15 +30,15 @@ export default class Position extends Component {
     render() {
         return (
             <div id="Position"> 
-                <div className="more-positon">
+                <div className="positon-header">
                         最新职位
                         <a href={this.props.morehref}>更多</a>
                 </div>
-               <div ref={this.state.listbox} className="ul-box">
+               <div ref={this.state.listbox} className="position-list-box">
                     <ul ref={this.state.ulRef} className="position-list">
                             {
                                 this.state.datalist.map((item,index)=>(
-                                    <li key={index} className="item">
+                                    <li key={index} className="position-list-item">
                                         <a href={item.href}>{item.title}</a>
                                         <span>{item.city}</span>
                                         <span>{item.time}</span>
@@ -51,11 +50,11 @@ export default class Position extends Component {
             </div>
         )
     }
-    handlerEvent = ()=>{
-        var dom = this.state.ulRef.current;
-        var listheight = this.state.ulRef.current.clientHeight;
-        var listboxHeight = this.state.listbox.current.clientHeight;
-        var scrolldistance = dom.offsetTop
+    scrollHandlerEvent = ()=>{
+        let dom = this.state.ulRef.current;
+        let listheight = this.state.ulRef.current.clientHeight;
+        let listboxHeight = this.state.listbox.current.clientHeight;
+        let scrolldistance = dom.offsetTop
         this.timer = setInterval(()=>{
             scrolldistance-=1
             dom.style.top = scrolldistance + "px"

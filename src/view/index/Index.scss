@@ -1,10 +1,8 @@
-#zhaopin-box{
-    overflow: hidden;
-    .index-header-wrap{
+  .index-header-wrap{
         background-color: #2C2F33;
         height: 54px;
         overflow: hidden;
-        .index-header{
+        .index-header-content{
             display: flex;
             align-items: center;
             height: 54px;
@@ -66,8 +64,8 @@
         }
         
         
-    }
-    .index-main{
+  }
+  .index-main-wrap{
         overflow: hidden;
         width: 100%;
         position: relative;
@@ -170,8 +168,8 @@
                 }
             }
         }
-    }
-    .newPosition{
+  }
+  .index-newPosition-wrap{
         height: 364px;
         width: 100%;
         overflow: hidden;
@@ -214,22 +212,21 @@
                 }
             }
         }
-    }
-    .index-footer{
-        width: 100%;
-        height: 44px;
-        background: #2C2F33;
-        .index-footer-content{
-            width: 1000px;
-            margin: 0 auto;
-            line-height: 44px;
-            text-align: center;
-            font-size: 13px;
-            color: #fff;
-            opacity: 0.4;
-        }
-    }
-}
+  }
+  .index-footer-wrap{
+      width: 100%;
+      height: 44px;
+      background: #2C2F33;
+      .index-footer-content{
+          width: 1000px;
+          margin: 0 auto;
+          line-height: 44px;
+          text-align: center;
+          font-size: 13px;
+          color: #fff;
+          opacity: 0.4;
+      }
+  }
 
 @media screen and (max-width: 950px) {
 
@@ -243,14 +240,11 @@
         font-size: 30px !important;
     }
 }
-
 @media screen and (max-width: 1440px) {
     .index-banner{
         width: 1440px !important;
     }
 }
-
-
 @media screen and (max-width: 949px) and (min-width :800px) {
     
     .index-banner-p{
@@ -263,7 +257,6 @@
         font-size: 26px !important;
     }
 }
-
 @media screen and (max-width: 799px) and (min-width : 700px){
     .index-banner-p{
         font-size: 40px !important;
@@ -275,7 +268,6 @@
         font-size: 26px !important;
     }
 }
-
 @media screen and (max-width: 699px) and (min-width : 500px){
     .index-banner-p{
         font-size: 30px !important;
@@ -287,7 +279,6 @@
         font-size: 20px !important;
     }
 }
-
 @media screen and (max-width: 499px) {
     .index-banner-p{
         font-size: 20px !important;

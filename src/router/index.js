@@ -12,7 +12,7 @@ export default function IndexRouter() {
         <Router>
             <Switch>
                 <Route path="/zhaopin/index.htm" component={Index}/>
-                <Redirect  from="/zhaopin" to="/zhaopin/index.htm"/>
+                <Redirect  from="/*" to="/zhaopin/index.htm"/>
             </Switch>
         </Router>
     )

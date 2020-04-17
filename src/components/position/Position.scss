@@ -1,0 +1,48 @@
+#Position{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    box-shadow: 0 0 15px 0 rgba(31, 56, 88, 0.08);
+    border-radius: 3px;
+    .more-positon{
+        height: 49px;
+        border-bottom: 1px solid rgba(31,56,88,0.06);
+        line-height: 49px;
+        padding: 0 14px;
+        background: white;
+        font-size: 14px;
+        color: #000000;
+        a{
+            float: right;
+            font-size: 14px;
+            color: rgba(31,56,88,0.60);
+        }
+    }   
+    .ul-box{
+       position: relative;
+       flex: 1;
+       overflow: hidden;
+        .position-list{
+            position: absolute;
+            width: 100%;
+            top: 0;
+            .item{
+                list-style: none;
+                display: flex;
+                justify-content: space-between;
+                padding:5px 10px;
+                a{
+                    font-size: 14px;
+                    color: #3C99D8;
+                    cursor: pointer;
+                    text-decoration: none;
+                }
+                span{
+                    color:rgba(0,0,0,0.60);
+                }
+            }
+            
+        }
+    }
+   
+}
